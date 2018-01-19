@@ -13,7 +13,9 @@ int main()
 	for(auto& word:text)
 	{
 		for(auto& ch : word)
+		{
 			if(isalpha(ch)) ch = toupper(ch);
+		}	
 		cout << word << " ";
 	}
 	return 0;
